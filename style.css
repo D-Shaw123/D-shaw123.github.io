@@ -79,6 +79,7 @@ header{
    background-color: aliceblue;
    display: flex;
    max-height: 500px;
+   border: 3px solid black;
 }
 .products{
     border: 1px solid grey;
@@ -113,7 +114,6 @@ header{
     width: 100%;
     height: 300px; /* Fixed height for the banner */
     overflow: hidden;
-    border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     margin-bottom: -80px;
 }
@@ -131,7 +131,6 @@ header{
     transition: opacity 0.5s ease; /* Smooth transition for showing banners */
     color: white; /* Text color */
     font-size: 2em; /* Text size */
-    border-radius: 10px; /* Same border radius as container */
 }
 
 .banner-item.active {
