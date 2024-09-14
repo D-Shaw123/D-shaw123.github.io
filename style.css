@@ -1,142 +1,322 @@
+head{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 body{
-    background-color: rgb(80, 135, 213);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0%;
-    font-size: 4vh 1.5vw
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px;
 }
-p{
-    font-size: 0.75em;
+header{
+    padding: 16px;
+    text-align: left;
+    display: flex;
 }
-article{
-    background-color: rgb(125, 149, 198);
-    margin:auto;
-    width: 90%;
+#topperimg img{
+    position: absolute;
+    width: 40vw;
+    height: 200px;
+    overflow: none;
+    border-radius: 1%;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.3);
 }
-article>main{
-    padding: 10px;
-    margin: auto;
-}
-.nav-button{
-    background-color: rgba(80,100,213,0.4);
-    border: 2px solid rgba(80,100,213,0.8);
-    color: #bd0909;
-    padding: 10px 20px;
-    border-radius: 10px;
+.open-button{
+    text-decoration: none;
+    color: black;
+    padding: 15px 20px;
+    border: none;
     cursor: pointer;
-    font-size: large;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: aliceblue;
+
+}
+.open-button:hover{
+    color: aliceblue;
+    background-color: black;
+    border-radius: 15%;
+    padding: 15px 20px;
+}
+#logo-container{
+    display: grid;
+    grid-template-areas: "L1"
+    "l2";
+    margin:none;
+    padding: 10px 30px;
+    background-color: aliceblue;
+    border-radius: 15%;
+    border: 5px groove black;
+}
+#menu nav{
+    display: flex;
+   
+}
+.navbutton{
+    padding: 20px 10px;
+    border:3px groove black;
+    background-color: aliceblue;
+    cursor: pointer;
+    border-radius: 15%;
     font-weight: bold;
-    margin:auto;
-    box-shadow: 4px 1px 8px 1px paleturquoise;
-   
-    
+
 }
-header nav>ul>li{
-    list-style: none;
+.navbutton:hover{
+    background-color: black;
+    color: aliceblue;
+}
+#menu > nav> ul> li{
     display: inline;
-    font-weight: 300;
-    margin: auto;
-    padding-bottom: 20px;
-}
-
-
-    
-
-nav{
-    padding-bottom: 20px;
-    margin: auto;
-}
-.nav-button:hover{
-    background-color:lightcoral ;
-    color: white;
-    padding: 10px 20px;
-}
-body > header{
-    background-color: rgb(125, 149, 198);
-    margin-top: 0%;
-    
-}
-html{
-    margin:0px
-}
-h1{
-    margin-top: 0%;
-    margin: auto;
     text-align: center;
-    padding-bottom: 0px;
-    font-family: "Bungee Tint", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-form{
-    text-align: center;
-    border-color: aliceblue;
-    border-radius: 100px;
-    border: 1px solid aliceblue;
-    padding: 10px 10px;
-    background-color: rgb(125, 149, 198);
-    margin: 8%;
-    
-    
+    justify-content: right;
+    list-style: none;
+    margin:45vw 5vh;
 
 }
-#formtitle{
+#menu{
+    margin:auto;
     text-align: center;
+    justify-content: space-around;
 }
-img{
-    border-radius: 100%;
+#topper{
+   background-color: aliceblue;
+   display: flex;
+   max-height: 500px;
 }
-#mainheader{
-    display:flex;
+.products{
+    border: 1px solid grey;
     align-items: center;
-}
-
-#footend{
-    display: flex;
-    justify-content: space-around;
-}
-#footend h2 {
-    font-family: "Bungee Tint", sans-serif;
-
-}
-
-   
-
-.footnav{
-    margin-left: auto;
-    padding-left: 20px;
-    color: aliceblue;
-    text-decoration: none;
-}
-.footnav > li > a{
-    color: aliceblue;
-    text-decoration: none;
-}
-.footnav > li>a:hover{
-    color: #bd0909;
-}
-
-#footend  ul{
-    display: flex;
-    justify-content: space-around;
-}
-#main-content{
-    display: flex;
-    justify-content:space-between;
+    padding:10%;
+    background-color:aliceblue;
     
 }
-#main-content aside{
-    width: 20vw;
-}
-.sidebar ul li a{
-  list-style: circle;  
-  text-decoration: none;
-  color: aliceblue;
-}
-.sidebar ul li a:hover{
-color: #bd0909;
+#sign-up{
+    margin:0px;
 
 }
-.sidebar{
-    margin-left: 5%;
+
+#grid-container{
+   position: relative;
+    display: grid;
+    grid-template-areas:
+    "p1 p2 p3"
+    "p4 p5 p6"
+    ;
+    margin: auto;
+    margin-top: -100px;
+    padding: 14px;
+    border-radius: 2%;
+    overflow: auto;
+    background-color:#ffffff5b;
+    max-height: 600px;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Fixed height for the banner */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: -80px;
+}
+.bamnergrad{
+    background: linear-gradient(to bottom,white, rgba(0,0,0,0.0) );
+}
+.banner-item {
+    position: absolute; /* Stack all banners on top of each other */
+    width: 100%;
+    height: 100%;
+    display: flex; /* Center text */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    opacity: 0; /* Hide all banners by default */
+    transition: opacity 0.5s ease; /* Smooth transition for showing banners */
+    color: white; /* Text color */
+    font-size: 2em; /* Text size */
+    border-radius: 10px; /* Same border radius as container */
+}
+
+.banner-item.active {
+    opacity: 1; /* Show the active banner */
+}
+
+.banner-text {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background for text */
+    border-radius: 5px;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 2em;
+    z-index: 10;
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+.modal-content {
+    background-color: aliceblue;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="checkbox"]{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.submit-btn{
+    background-color: greenyellow;
+    color: aliceblue;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover{
+    background-color: rgb(79, 127, 7);
+}
+.open-prod {
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.open-prod:hover{
+    background-color: rgb(20, 20, 20);
+}
+
+.mod{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close2{
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid aliceblue;
+    box-sizing: border-box;
+}
+#reviews{
+    border: 1px solid black;
+    margin: 5px 0 20px 0;
+    overflow: auto;
+    max-height: 200px;
+}
+.footnav>li>a{color: aliceblue;
+    text-decoration: none;
+}
+footer{
+    background-color: black;
+    display: flex;
     color: aliceblue;
 }
+footer nav ul    {
+
+    justify-content:center;
+    text-decoration: none;
+    background-color: black;
+    width: 100%;
+    border: 1px solid black;  
+    display: flex;  
+    padding: 10px;
+}
+.footnav{
+    text-decoration: none;
+    padding: 100px;
+    margin: auto;
+}
+
